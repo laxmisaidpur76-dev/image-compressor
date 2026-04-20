@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 40px;
+  background: #f5f5f5;
+}
+
+#previewBox {
+  margin: 20px;
+}
+
+#previewImage {
+  border: 2px solid #ccc;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+input, select, button {
+  margin: 10px;
+  padding: 8px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}

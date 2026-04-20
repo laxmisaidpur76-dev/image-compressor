@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+<meta charset="UTF-8">
+<title>Universal File Compressor</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+</head>
+
+<body>
+
+<h2>Universal File Compressor Tool</h2>
+
+<input type="file" id="fileInput"><br>
+
+<!-- 👇 Preview Area -->
+<div id="previewBox">
+  <p id="fileName"></p>
+  <img id="previewImage" style="display:none; max-width:200px;">
+</div>
+
+<select id="fileType">
+  <option value="auto">Auto Detect</option>
+  <option value="image">Image (JPG/PNG)</option>
+  <option value="pdf">PDF</option>
+  <option value="video">MP4</option>
+  <option value="zip">ZIP</option>
+</select><br>
+
+<label>Compression Level: <span id="val">75</span>%</label><br>
+<input type="range" id="slider" min="10" max="100" value="75"><br>
+
+<button onclick="processFile()">Compress</button>
+
+<canvas id="canvas" style="display:none;"></canvas>
+
+<script src="script.js"></script>
+
+</body>
+</html>
